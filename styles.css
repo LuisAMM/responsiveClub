@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+.nostyle:link {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.nostyle:visited {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+.TLBars{
+	text-align: center;
+	color: #264653;
+	background-color: #2A9D8F;
+	padding-top: 15px;
+	font-size: 1.2em;
+}
+
+.TLBars li{
+	padding: 10px 0 10px 0;
+}
+
+body{
+	background-color: #F4A261;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1{
+	font-size: 2em;
+	margin: 3rem 0 8.5rem 0;
+	padding: 35px 0 35px 0;
+	text-align: center;
+	background-color: #E76F51;
+	color: #E9C46A;
+}
+
+.images img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+h2{
+	font-size: 1.5em;
+	color: yellow;
+	margin-bottom: 20px;
+}
+
+.introSection{
+	margin-left: 20px ;
+	margin-right: 20px ;
+	margin-bottom: 70px;
+	font-size: 1.1em;
+}
+
+.introSection p{
+	margin-bottom: 20px;
+}
+
+.quotes{
+	background-color: #264653;
+	color: yellow;
+	padding: 3rem 0.1rem 0.1rem 1rem;
+	margin: 3.1rem 0 3.5rem 0;
+	height: 18rem;
+    overflow: auto;
+}
+
+.quotes p{
+	font-size: 3rem;
+	margin: 0 0 25px 0;
+}
+
+.posterImage{
+	margin: 50px 0;
+}
+
+.posterImage h3{
+	text-align: center;
+	font-size: 2.1em;
+	color: yellow;
+}
+
+.posterImage img{
+	width: 50%;
+	margin: 20px auto;
+	display: block;
+}
+
+/* expand the menu on 640px*/
+/* set images in the same row 1048 */
+
+@media (min-width: 640px){
+	.TLBars ol{
+		list-style-type: none;
+		text-align: left;
+		padding-left: 50px;
+	}
+	.TLBars li{
+		display: inline-block;
+		padding-right: 50px;
+	}
+	.TLBars{
+		width: 100%;
+		display: inline-block;
+	}
+	h1{
+		margin: 11rem 0 18rem 0;
+	}
+
+}
+
+@media (min-width: 1048px){
+	.images img{
+		width: 30%;
+		margin: calc(10%/6);
+	}
+}
+
