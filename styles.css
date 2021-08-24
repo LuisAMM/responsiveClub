@@ -61,12 +61,12 @@ table {
 	text-align: center;
 	color: #264653;
 	background-color: #F9C74F;
-	padding-top: 15px;
-	font-size: 1.2em;
+	padding-top: 1rem;
+	font-size: 1.2rem;
 }
 
 .TLBars li{
-	padding: 10px 0 10px 0;
+	padding: 0.5rem 0 0.5rem 0;
 }
 
 body{
@@ -78,80 +78,101 @@ body{
 h1{
 	font-size: 2em;
 	margin: 3rem auto 8.5rem auto;
-	padding: 35px 0 35px 0;
+	padding: 3rem 0 3rem 0;
 	text-align: center;
 	background-color: #F9844A;
 	color: #E9C46A;
-	border-top: #577590 solid 1px ;
-	border-bottom: #577590 solid 1px ;
 	width: 75%;
 }
 
-.images img{
-	width: 100%;
-	margin-bottom: 20px;
-}
-
 h2{
-	font-size: 1.5em;
+	font-size: 1.9rem;
 	color: yellow;
-	margin-bottom: 20px;
+	margin-bottom: 1.5rem;
 }
 
 .introSection{
-	margin-left: 20px ;
-	margin-right: 20px ;
-	margin-bottom: 70px;
-	font-size: 1.1em;
+	margin-left: 1.2rem ;
+	margin-right: 1.2rem ;
+	margin-bottom: 4rem;
+	font-size: 1.1rem;
+	text-align: justify;
 }
 
 .introSection p{
-	margin-bottom: 20px;
+	margin-bottom: 1.2rem;
 }
 
 .quotes{
 	background-color: #264653;
 	color: yellow;
-	padding: 3rem 0.1rem 0.1rem 1rem;
-	margin: 3.1rem 0 3.5rem 0;
+	padding: 3rem 1.5rem 3rem 1.5rem;
 	height: 18rem;
     overflow: auto;
+	text-align: justify;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .quotes p{
 	font-size: 2rem;
-	margin: 0 0 25px 0;
+	margin: 0 0 2rem 0;
 }
 
 .posterImage{
-	margin: 50px 0;
+	margin: 3rem 0;
 }
 
 .posterImage h3{
 	text-align: center;
 	font-size: 2.1em;
 	color: yellow;
+	padding: 0 0.6rem;
 }
 
 .posterImage img{
 	width: 50%;
 	max-width: 600px;
-	margin: 20px auto;
+	margin: 1rem auto;
 	display: block;
 }
 
-/* expand the menu on 640px*/
-/* set images in the same row 1048 */
+.imageContainer{
+	display: block;
+}
+
+.imageContainer img{
+	max-width: 100%;
+}
+
+.imageContainer div{
+	display: block; 
+	max-width: 100%; 
+	padding: 2rem;
+	font-size: 1.5rem;
+	border-top: none;
+}
+
+.imageContainer div p span{
+	display: block;
+	margin-top: 1rem;
+}
+
+.mountainName{
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
 
 @media (min-width: 640px){
 	.TLBars ol{
 		list-style-type: none;
 		text-align: left;
-		padding-left: 50px;
+		padding-left: 2.5rem;
 	}
 	.TLBars li{
 		display: inline-block;
-		padding-right: 50px;
+		padding-right: 2.5rem;
 	}
 	.TLBars{
 		width: 100%;
@@ -169,11 +190,25 @@ h2{
 
 }
 
-@media (min-width: 1048px){
-	.images img{
-		width: 30%;
-		margin: calc(10%/6);
-		border-radius: 15%;
+@media (min-width: 800px){
+	.imageContainer{
+		display: flex;
+	}
+	
+	.rightSide{
+		flex-direction: row-reverse;
+	}
+
+	.imageContainer img{
+		max-width: 50%;
+	}
+	
+	.imageContainer div{
+		display: flex; 
+		width: 50%; 
+		justify-content: center; 
+		align-items: center;
+		text-align: justify;
+		padding: 2rem;
 	}
 }
-
