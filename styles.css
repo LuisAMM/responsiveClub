@@ -60,7 +60,7 @@ table {
 .TLBars{
 	text-align: center;
 	color: #264653;
-	background-color: #2A9D8F;
+	background-color: #F9C74F;
 	padding-top: 15px;
 	font-size: 1.2em;
 }
@@ -70,17 +70,21 @@ table {
 }
 
 body{
-	background-color: #F4A261;
+	background-color: #43AA8B;
 	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0.1rem;
 }
 
 h1{
 	font-size: 2em;
-	margin: 3rem 0 8.5rem 0;
+	margin: 3rem auto 8.5rem auto;
 	padding: 35px 0 35px 0;
 	text-align: center;
-	background-color: #E76F51;
+	background-color: #F9844A;
 	color: #E9C46A;
+	border-top: #577590 solid 1px ;
+	border-bottom: #577590 solid 1px ;
+	width: 75%;
 }
 
 .images img{
@@ -115,7 +119,7 @@ h2{
 }
 
 .quotes p{
-	font-size: 3rem;
+	font-size: 2rem;
 	margin: 0 0 25px 0;
 }
 
@@ -131,6 +135,7 @@ h2{
 
 .posterImage img{
 	width: 50%;
+	max-width: 600px;
 	margin: 20px auto;
 	display: block;
 }
@@ -153,7 +158,13 @@ h2{
 		display: inline-block;
 	}
 	h1{
-		margin: 11rem 0 18rem 0;
+		margin: 11rem auto 18rem auto;
+	}
+	#login{
+		float: right;
+	}
+	.quotes p{
+		font-size: 3rem;
 	}
 
 }
@@ -162,6 +173,7 @@ h2{
 	.images img{
 		width: 30%;
 		margin: calc(10%/6);
+		border-radius: 15%;
 	}
 }
 
