@@ -61,12 +61,20 @@ table {
 	text-align: center;
 	color: #264653;
 	background-color: #F9C74F;
-	padding-top: 1rem;
 	font-size: 1.2rem;
+	box-shadow: 0 0 1rem 0 black;
+
 }
 
 .TLBars li{
 	padding: 0.5rem 0 0.5rem 0;
+	transition: transform .2s;
+	transition: background-color .2s;
+}
+
+.TLBars li:hover{
+	transform: scale(1.01);
+	background-color: #277da1;
 }
 
 body{
@@ -80,9 +88,9 @@ h1{
 	margin: 3rem auto 8.5rem auto;
 	padding: 3rem 0 3rem 0;
 	text-align: center;
-	background-color: #F9844A;
+	background-color: #277da1;
 	color: #E9C46A;
-	width: 75%;
+	width: 100%;
 }
 
 h2{
@@ -104,7 +112,7 @@ h2{
 }
 
 .quotes{
-	background-color: #264653;
+	background-color: #277da1;
 	color: yellow;
 	padding: 3rem 1.5rem 3rem 1.5rem;
 	height: 18rem;
@@ -140,6 +148,7 @@ h2{
 
 .imageContainer{
 	display: block;
+
 }
 
 .imageContainer img{
@@ -164,25 +173,30 @@ h2{
 	margin-bottom: 1rem;
 }
 
-@media (min-width: 640px){
+@media (min-width: 991px){
 	.TLBars ol{
 		list-style-type: none;
-		text-align: left;
 		padding-left: 2.5rem;
+		width: 100%;
+		display: flex;
 	}
 	.TLBars li{
 		display: inline-block;
-		padding-right: 2.5rem;
+		padding: 0.5rem 1rem;
+		margin: 0 2.5rem;
+		border-radius: 50px;
 	}
 	.TLBars{
 		width: 100%;
-		display: inline-block;
+		height: 3rem;
+		display: flex;
+		align-items: center;
+	}
+	#login{
+		margin-left: auto;
 	}
 	h1{
 		margin: 11rem auto 18rem auto;
-	}
-	#login{
-		float: right;
 	}
 	.quotes p{
 		font-size: 3rem;
@@ -193,8 +207,13 @@ h2{
 @media (min-width: 800px){
 	.imageContainer{
 		display: flex;
+		transition: transform .2s;
 	}
 	
+	.imageContainer:hover{
+		transform: scale(1.01);
+	}
+
 	.rightSide{
 		flex-direction: row-reverse;
 	}
